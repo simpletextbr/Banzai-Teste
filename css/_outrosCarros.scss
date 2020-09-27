@@ -1,0 +1,177 @@
+section.Outros_carros {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 114px;
+
+  & p.title {
+    font-size: 34px;
+  }
+  & p.texto {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  & .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+
+    & .carro {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #d5d5d5;
+
+      & p.description {
+        margin-top: 10px;
+        font-weight: lighter;
+      }
+
+      & button {
+        margin-top: 20px;
+        padding: 10px;
+        width: 90%;
+        border-radius: 4px;
+        background-color: #ffffff;
+        border: 2px solid #d5d5d5;
+        cursor: pointer;
+      }
+    }
+
+    & .carro + .carro {
+      margin-left: 20px;
+    }
+  }
+
+  & .mobile {
+    display: none;
+  }
+}
+
+@media (max-device-width: 600px) {
+  section.Outros_carros {
+    margin-top: 40px;
+    & p.title {
+      font-size: 34px;
+      text-align: center;
+    }
+    & p.texto {
+      font-size: 16px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    & .list {
+      display: none;
+    }
+
+    & .mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & .carro {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        height: 196px;
+
+        & .select {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+
+        & button {
+          display: flex;
+          margin-top: 20px;
+          padding: 10px;
+          width: 100%;
+          border-radius: 4px;
+          background-color: #ffffff;
+          border: 2px solid #d5d5d5;
+          margin-left: auto;
+          margin-right: auto;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    & .carro + .carro {
+      margin-left: 20px;
+    }
+  }
+
+  & .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  section.Outros_carros {
+    margin-top: 40px;
+    & p.title {
+      font-size: 34px;
+      text-align: center;
+    }
+    & p.texto {
+      font-size: 16px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    & .list {
+      display: none;
+    }
+
+    & .mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & .carro {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        height: 196px;
+
+        & .select {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+
+        & button {
+          display: flex;
+          margin-top: 20px;
+          padding: 10px;
+          width: 100%;
+          border-radius: 4px;
+          background-color: #ffffff;
+          border: 2px solid #d5d5d5;
+          margin-left: auto;
+          margin-right: auto;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    & .carro + .carro {
+      margin-left: 20px;
+    }
+  }
+
+  & .mobile {
+    display: none;
+  }
+}

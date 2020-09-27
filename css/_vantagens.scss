@@ -1,0 +1,139 @@
+section.vantagens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  margin-left: 114px;
+  width: 64%;
+  margin-top: 40px;
+
+  & div {
+    &.arrow-left,
+    &.arrow-right {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: #00000022;
+      border-radius: 50%;
+      z-index: 99;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &.arrow-left {
+      left: 0;
+      margin-left: 40px;
+    }
+
+    &.arrow-right {
+      right: 0;
+      margin-right: 40px;
+    }
+    & .list {
+      display: flex;
+
+      & .vantagem {
+        & img {
+          width: 260px;
+          height: 160px;
+          transition: all ease 0.5s;
+          transform: scale(0.9);
+          border: 2px solid #d5d5d5;
+        }
+
+        & img:hover {
+          transform: scale(1);
+        }
+
+        & p.title {
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        & p {
+          font-style: 12px;
+          font-weight: lighter;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-device-width: 600px) {
+  section.vantagens {
+    margin-top: 40px;
+    overflow-x: visible;
+    width: 100%;
+
+    & div {
+      &.arrow-left,
+      &.arrow-right {
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        background-color: #00000044;
+        border-radius: 50%;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &.arrow-right img,
+      &.arrow-left img {
+        width: 80px;
+        height: 80px;
+      }
+
+      &.arrow-left {
+        left: 0;
+        margin-left: 80px;
+      }
+
+      &.arrow-right {
+        right: 0;
+        margin-right: 0px;
+      }
+
+      &.list-area {
+        display: none;
+      }
+
+      &.mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+
+        & .vantagem {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          & img {
+            width: 80%;
+            border-radius: 8px;
+            border: 10px solid #d5d5d5;
+          }
+
+          & p.title {
+            font-size: 40px;
+            margin-right: 40px;
+            text-align: center;
+            color: black;
+          }
+
+          & p {
+            width: 80%;
+            font-style: 50px;
+            font-weight: normal;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

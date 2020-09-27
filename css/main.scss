@@ -1,0 +1,51 @@
+$background_complemento: #eee;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "roboto", sans-serif;
+  width: 100%;
+}
+
+@import "header";
+@import "logoTelefone";
+@import "banners";
+@import "form";
+@import "infos";
+@import "vantagens";
+@import "outrosCarros";
+@import "contatos";
+
+footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer > img {
+  width: 140px;
+}
+
+footer > div.ibama {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > div.ibama > p {
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #d5d5d5;
+}
