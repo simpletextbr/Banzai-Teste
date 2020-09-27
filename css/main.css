@@ -612,7 +612,7 @@ section.form form button:hover {
             flex-direction: column;
     padding: 20px;
     width: 60%;
-    height: 30vh;
+    height: 36vh;
     background-color: #eee;
     border-radius: 8px;
     position: static;
@@ -899,7 +899,7 @@ section.infos div.images .list_images img + img {
             flex-direction: column;
     text-align: center;
     margin-left: 114px;
-    margin-top: 40px;
+    margin-top: 120px;
     width: 80%;
   }
   section.infos p.title {
